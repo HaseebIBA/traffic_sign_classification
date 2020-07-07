@@ -8,7 +8,7 @@ familarity with python and artifical neural network and basic undertandings.
  The dataset is consist of 43 different classes 
  the image are 32X32 pixels
  RGB images
-
+ the data set is beign broken down like 80% training 10% testing 10% validation
 ## intallation
 1) Clone this reposiroty or simply download it and put these files into you anaconda directory if using anaconda other wise to the place of your IDE use its saved files.
 2) Following directoires which are very important to run this program:
@@ -73,4 +73,23 @@ CNN.summary()
 
 ![Instance Segmentation Sample](training.PNG)
 ![Instance Segmentation Sample](validation.PNG)
+
+# Testing model
+ the model is being tested over the test data which were given in the data set.
+ following is the code and ouput of the model in the shape of 5X5 image matrix with prediction and real value
+ ``` python 
+ L = 5
+W = 5
+
+fig, axes = plt.subplots(L, W, figsize = (12, 12))
+axes = axes.ravel()
+
+for i in np.arange(0, L*W):
+    axes[i].imshow(X_test[i])
+    axes[i].set_title('Prediction = {}\n True = {}'.format(predicted_classes[i], y_true[i]))
+    axes[i].axis('off')
+
+plt.subplots_adjust(wspace = 1)    
+ ```
+![Instance Segmentation Sample](testing.PNG)
 

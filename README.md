@@ -12,19 +12,19 @@ familarity with python and artifical neural network and basic undertandings.
 ## intallation
 1) Clone this reposiroty or simply download it and put these files into you anaconda directory if using anaconda other wise to the place of your IDE use its saved files.
 2) Following directoires which are very important to run this program:
-  1)matplotlib.pyplot (pip install matplotlib)
+ 1)matplotlib.pyplot (pip install matplotlib)
   
-  2)numpy  (pip/pip3 install numpy)
+ 2)numpy  (pip/pip3 install numpy)
   
-  3)tensorflow (pip install --upgrade tensorflow)
+ 3)tensorflow (pip install --upgrade tensorflow)
   
-  4)pandas (pip install pandas)
+ 4)pandas (pip install pandas)
   
-  5)seaborn (pip install seaborn)
+ 5)seaborn (pip install seaborn)
   
-  6)pickle (pip install pickle)
+ 6)pickle (pip install pickle)
   
-  7)random (pip install random)
+ 7)random (pip install random)
   
 ones these all are done run the code.
 

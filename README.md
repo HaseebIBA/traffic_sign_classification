@@ -33,6 +33,7 @@ ones these all are done run the code.
 
 ![Instance Segmentation Sample](view.PNG)
 
+
 ## Example after normalize 
 ```python
   # converting to grey scale
@@ -47,4 +48,29 @@ ones these all are done run the code.
 ```
 ![Instance Segmentation Sample](normalize.PNG)
 
+## Training model
+This is how you have to make your CNN model with all these parameters according to the images and the number of classes
+```python
+from tensorflow.keras import datasets, layers, models
+CNN= models.Sequential()
+
+CNN.add(layers.Conv2D(6, (5, 5) , activation = 'relu' , input_shape = (32, 32, 1)))
+CNN.add(layers.AveragePooling2D())
+
+CNN.add(layers.Dropout(0.2))
+
+CNN.add(layers.Conv2D(16, (5, 5) , activation = 'relu' ))
+CNN.add(layers.AveragePooling2D())
+
+CNN.add(layers.Flatten())
+
+CNN.add(layers.Dense(120, activation='relu'))
+CNN.add(layers.Dense(84, activation='relu'))
+CNN.add(layers.Dense(43, activation='softmax'))
+CNN.summary()
+```
+## Training and validation loss and accuracy image view
+
+![Instance Segmentation Sample](training.PNG)
+![Instance Segmentation Sample](validation.PNG)
 

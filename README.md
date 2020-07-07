@@ -23,7 +23,7 @@ ones these all are done run the code.
 
 ## Example of images of dataset into 10X10 matric of images
 
-![Instance Segmentation Sample](view.png)
+![Instance Segmentation Sample](view.PNG)
 
 ## Example after normalize 
 ```python
@@ -37,6 +37,6 @@ ones these all are done run the code.
  X_test_gray_norm=(X_test_gray -128)/128
  X_validation_gray_norm=(X_validation_gray -128)/128
 ```
-![Instance Segmentation Sample](normalize.png)
+![Instance Segmentation Sample](normalize.PNG)
 
 

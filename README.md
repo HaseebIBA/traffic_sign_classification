@@ -8,7 +8,7 @@ familarity with python and artifical neural network and basic undertandings.
  The dataset is consist of 43 different classes 
  the image are 32X32 pixels
  RGB images
- the data set is beign broken down like 80% training 10% testing 10% validation
+ the data set is beign broken down like 60% training 20% testing 20% validation
 ## intallation
 1) Clone this reposiroty or simply download it and put these files into you anaconda directory if using anaconda other wise to the place of your IDE use its saved files.
 2) Following directoires which are very important to run this program:
